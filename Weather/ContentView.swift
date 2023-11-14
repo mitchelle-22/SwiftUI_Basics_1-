@@ -24,9 +24,27 @@ struct ContentView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 180,height: 180)
                     
-                    Text("76°")
+                    Text("28°")
                         .font(.system(size: 70,weight: .medium))
                         .foregroundColor(.white)
+                }
+                .padding(.bottom,40)
+                
+              HStack(spacing:20){
+                  WeatherDayView(dayOfWeek: "TUE", imageName: "cloud.sun.fill", temperature:27)
+                    WeatherDayView(
+                      dayOfWeek: "WED",
+                       imageName: "sun.rain.fill", temperature:25)
+                    WeatherDayView(
+                        dayOfWeek:"THU",
+                        imageName:"smoke",temperature:20)
+                    WeatherDayView(
+                    dayOfWeek:"FRI",
+                    imageName: "cloud.moon.bolt", temperature:21)
+                    WeatherDayView(
+                        dayOfWeek: "SAT",
+                        imageName:"wind", temperature:18)
+
                 }
                   Spacer()
                 
@@ -39,4 +57,27 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+}
+
+struct WeatherDayView: View {
+    var dayOfWeek : String
+    var imageName : String
+    var temperature : Int
+    
+    var body: some View {
+        VStack{
+            Text(dayOfWeek)
+                .font(.system(size: 16,weight: .medium,design: .default))
+                .foregroundColor(.white)
+            Image(systemName: imageName)
+                .renderingMode(.original)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 40,height: 40)
+            
+            Text("\(temperature)°")
+                .font(.system(size: 28,weight: .medium))
+                .foregroundColor(.white)
+        }
+    }
 }
