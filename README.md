@@ -18,10 +18,12 @@ Xcode 15 or 15 beta
 macOS version compatible with Xcode 15
 
 **Installation**
-1.Clone the repository:
+1. Clone the repository:
 https://github.com/mitchelle-22/SwiftUI_Basics_1-.git
-2.Open the project in Xcode.
-3.Build and run the app in the Xcode simulator or a connected iOS device.
+2. Open the project in Xcode.
+3. Build and run the app in the Xcode simulator or a connected iOS device.
+
+
 
 ## Features
 
