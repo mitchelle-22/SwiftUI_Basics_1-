@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            BackgroundView(isNight: $isNight, topColor: <#T##Color#>, bottomColor: <#T##Color#>)
+            BackgroundView(isNight: $isNight, topColor: .blue, bottomColor: .white)
             VStack{
                 CityTextView(cityName: "Johannesburg,JHB")
                 ImageView(imageName: isNight ? "moon.stars.circle.fill": "cloud.sun.fill", temperature: 28)

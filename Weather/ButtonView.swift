@@ -11,6 +11,7 @@ struct ButtonView : View {
     var name : String
     var textColor: Color
     var backgroundColor: Color
+    
     var body: some View {
         Text(name)
             .frame(width: 280,height: 50)
