@@ -1,4 +1,5 @@
 # SwiftUI_Basics_1-
+![Weather App Learning Curve](https://user-images.githubusercontent.com/53512559/283738550-ab1caa43-684c-47db-a144-3a56e5d9b606.png)
 
 
 This SwiftUI Weather App project focuses on learning various SwiftUI layout structures (ZStack, VStack, HStack), the usage of @ViewBuilder, @State, @Binding, and the process of refactoring code.
